@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Legal Stock Pre-Approval Request" max_length="40" name="x_snc_legal_legal_stock_pre_approval_request" type="collection">
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+    </element>
+</database>
