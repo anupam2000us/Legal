@@ -2,5 +2,28 @@
 <database>
     <element label="Legal Stock Pre-Approval Request" max_length="40" name="x_snc_legal_legal_stock_pre_approval_request" type="collection">
         <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="ESPP" max_length="40" name="u_espp" type="boolean"/>
+        <element label="I Agree" max_length="40" name="u_i_agree" type="boolean"/>
+        <element label="Name" max_length="32" name="u_name" reference="sys_user" type="reference"/>
+        <element label="Number" max_length="40" name="u_number" type="string"/>
+        <element label="Number of Shares or Other Securities to be Traded" max_length="40" name="u_number_of_shares" type="string"/>
+        <element label="Options-ISO" max_length="40" name="u_options_iso" type="boolean"/>
+        <element label="Options-NQS" max_length="40" name="u_options_nqs" type="boolean"/>
+        <element label="Other" max_length="40" name="u_other" type="boolean"/>
+        <element label="Other Types" max_length="40" name="u_other_comments" type="string"/>
+        <element label="Proposed Trade Date" max_length="40" name="u_proposed_trade_date" type="glide_date"/>
+        <element label="Approval Valid Until" max_length="40" name="u_request_valid_till" type="string"/>
+        <element label="RSU" max_length="40" name="u_rsu" type="boolean"/>
+        <element choice="1" default="1" label="State" max_length="40" name="u_state" read_only="true" type="string">
+            <choice>
+                <element label="Draft" value="1"/>
+            </choice>
+        </element>
+        <element choice="1" label="Type of Trade" max_length="40" name="u_type_of_trades" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="u_name"/>
+        </index>
     </element>
 </database>

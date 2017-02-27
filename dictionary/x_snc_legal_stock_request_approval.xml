@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Stock Request approval" max_length="40" name="x_snc_legal_stock_request_approval" type="collection">
+        <element attributes="import_attribute_name=Active,edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="string"/>
+        <element attributes="import_attribute_name=Application,edge_encryption_enabled=true" label="Application" max_length="40" name="u_application" type="string"/>
+        <element attributes="import_attribute_name=Array,edge_encryption_enabled=true" label="Array" max_length="40" name="u_array" type="string"/>
+        <element attributes="import_attribute_name=Array denormalized,edge_encryption_enabled=true" label="Array denormalized" max_length="40" name="u_array_denormalized" type="string"/>
+        <element attributes="import_attribute_name=Attributes,edge_encryption_enabled=true" label="Attributes" max_length="40" name="u_attributes" type="string"/>
+        <element attributes="import_attribute_name=Audit,edge_encryption_enabled=true" label="Audit" max_length="40" name="u_audit" type="string"/>
+        <element attributes="import_attribute_name=Calculated,edge_encryption_enabled=true" label="Calculated" max_length="40" name="u_calculated" type="string"/>
+        <element attributes="import_attribute_name=Calculation,edge_encryption_enabled=true" label="Calculation" max_length="40" name="u_calculation" type="string"/>
+        <element attributes="import_attribute_name=Choice,edge_encryption_enabled=true" label="Choice" max_length="58" name="u_choice" type="string"/>
+        <element attributes="import_attribute_name=Choice field,edge_encryption_enabled=true" label="Choice field" max_length="40" name="u_choice_field" type="string"/>
+        <element attributes="import_attribute_name=Choice table,edge_encryption_enabled=true" label="Choice table" max_length="40" name="u_choice_table" type="string"/>
+        <element attributes="import_attribute_name=Class,edge_encryption_enabled=true" label="Class" max_length="40" name="u_class" type="string"/>
+        <element attributes="import_attribute_name=Column label,edge_encryption_enabled=true" label="Column label" max_length="49" name="u_column_label" type="string"/>
+        <element attributes="import_attribute_name=Column name,edge_encryption_enabled=true" label="Column name" max_length="40" name="u_column_name" type="string"/>
+        <element attributes="import_attribute_name=Comments,edge_encryption_enabled=true" label="Comments" max_length="40" name="u_comments" type="string"/>
+        <element attributes="import_attribute_name=Create roles,edge_encryption_enabled=true" label="Create roles" max_length="40" name="u_create_roles" type="string"/>
+        <element attributes="import_attribute_name=Customer update,edge_encryption_enabled=true" label="Customer update" max_length="40" name="u_customer_update" type="string"/>
+        <element attributes="import_attribute_name=Defaultsort,edge_encryption_enabled=true" label="Defaultsort" max_length="40" name="u_defaultsort" type="string"/>
+        <element attributes="import_attribute_name=Default value,edge_encryption_enabled=true" label="Default value" max_length="40" name="u_default_value" type="string"/>
+        <element attributes="import_attribute_name=Delete roles,edge_encryption_enabled=true" label="Delete roles" max_length="40" name="u_delete_roles" type="string"/>
+        <element attributes="import_attribute_name=Dependent,edge_encryption_enabled=true" label="Dependent" max_length="40" name="u_dependent" type="string"/>
+        <element attributes="import_attribute_name=Dependent on field,edge_encryption_enabled=true" label="Dependent on field" max_length="40" name="u_dependent_on_field" type="string"/>
+        <element attributes="import_attribute_name=Display,edge_encryption_enabled=true" label="Display" max_length="40" name="u_display" type="string"/>
+        <element attributes="import_attribute_name=Display name,edge_encryption_enabled=true" label="Display name" max_length="49" name="u_display_name" type="string"/>
+        <element attributes="import_attribute_name=Dynamic creation,edge_encryption_enabled=true" label="Dynamic creation" max_length="40" name="u_dynamic_creation" type="string"/>
+        <element attributes="import_attribute_name=Dynamic creation script,edge_encryption_enabled=true" label="Dynamic creation script" max_length="40" name="u_dynamic_creation_script" type="string"/>
+        <element attributes="import_attribute_name=Dynamic default value,edge_encryption_enabled=true" label="Dynamic default value" max_length="40" name="u_dynamic_default_value" type="string"/>
+        <element attributes="import_attribute_name=Dynamic ref qual,edge_encryption_enabled=true" label="Dynamic ref qual" max_length="40" name="u_dynamic_ref_qual" type="string"/>
+        <element attributes="import_attribute_name=Element reference,edge_encryption_enabled=true" label="Element reference" max_length="40" name="u_element_reference" type="string"/>
+        <element attributes="import_attribute_name=Foreign database,edge_encryption_enabled=true" label="Foreign database" max_length="40" name="u_foreign_database" type="string"/>
+        <element attributes="import_attribute_name=Mandatory,edge_encryption_enabled=true" label="Mandatory" max_length="40" name="u_mandatory" type="string"/>
+        <element attributes="import_attribute_name=Max length" label="Max length" max_length="40" name="u_max_length" type="integer"/>
+        <element attributes="import_attribute_name=Next element,edge_encryption_enabled=true" label="Next element" max_length="40" name="u_next_element" type="string"/>
+        <element attributes="import_attribute_name=Package,edge_encryption_enabled=true" label="Package" max_length="40" name="u_package" type="string"/>
+        <element attributes="import_attribute_name=Primary,edge_encryption_enabled=true" label="Primary" max_length="40" name="u_primary" type="string"/>
+        <element attributes="import_attribute_name=Protection policy,edge_encryption_enabled=true" label="Protection policy" max_length="40" name="u_protection_policy" type="string"/>
+        <element attributes="import_attribute_name=R,edge_encryption_enabled=true" label="R" max_length="40" name="u_r" type="string"/>
+        <element attributes="import_attribute_name=Read only,edge_encryption_enabled=true" label="Read only" max_length="40" name="u_read_only" type="string"/>
+        <element attributes="import_attribute_name=Read roles,edge_encryption_enabled=true" label="Read roles" max_length="40" name="u_read_roles" type="string"/>
+        <element attributes="import_attribute_name=Reference,edge_encryption_enabled=true" label="Reference" max_length="40" name="u_reference" type="string"/>
+        <element attributes="import_attribute_name=Reference cascade rule,edge_encryption_enabled=true" label="Reference cascade rule" max_length="40" name="u_reference_cascade_rule" type="string"/>
+        <element attributes="import_attribute_name=Reference floats,edge_encryption_enabled=true" label="Reference floats" max_length="40" name="u_reference_floats" type="string"/>
+        <element attributes="import_attribute_name=Reference key,edge_encryption_enabled=true" label="Reference key" max_length="40" name="u_reference_key" type="string"/>
+        <element attributes="import_attribute_name=Reference qual,edge_encryption_enabled=true" label="Reference qual" max_length="40" name="u_reference_qual" type="string"/>
+        <element attributes="import_attribute_name=Reference qual condition,edge_encryption_enabled=true" label="Reference qual condition" max_length="40" name="u_reference_qual_condition" type="string"/>
+        <element attributes="import_attribute_name=Reference type,edge_encryption_enabled=true" label="Reference type" max_length="40" name="u_reference_type" type="string"/>
+        <element attributes="import_attribute_name=Replace on upgrade,edge_encryption_enabled=true" label="Replace on upgrade" max_length="40" name="u_replace_on_upgrade" type="string"/>
+        <element attributes="import_attribute_name=S,edge_encryption_enabled=true" label="S" max_length="40" name="u_s" type="string"/>
+        <element attributes="import_attribute_name=Sizeclass,edge_encryption_enabled=true" label="Sizeclass" max_length="40" name="u_sizeclass" type="string"/>
+        <element attributes="import_attribute_name=Spell check,edge_encryption_enabled=true" label="Spell check" max_length="40" name="u_spell_check" type="string"/>
+        <element attributes="import_attribute_name=Staged,edge_encryption_enabled=true" label="Staged" max_length="40" name="u_staged" type="string"/>
+        <element attributes="import_attribute_name=Table,edge_encryption_enabled=true" label="Table" max_length="44" name="u_table" type="string"/>
+        <element attributes="import_attribute_name=Table reference,edge_encryption_enabled=true" label="Table reference" max_length="40" name="u_table_reference" type="string"/>
+        <element attributes="import_attribute_name=Text index,edge_encryption_enabled=true" label="Text index" max_length="40" name="u_text_index" type="string"/>
+        <element attributes="import_attribute_name=Type,edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="import_attribute_name=Unique,edge_encryption_enabled=true" label="Unique" max_length="40" name="u_unique" type="string"/>
+        <element attributes="import_attribute_name=Use dependent field,edge_encryption_enabled=true" label="Use dependent field" max_length="40" name="u_use_dependent_field" type="string"/>
+        <element attributes="import_attribute_name=Use dynamic default,edge_encryption_enabled=true" label="Use dynamic default" max_length="40" name="u_use_dynamic_default" type="string"/>
+        <element attributes="import_attribute_name=Use reference qualifier,edge_encryption_enabled=true" label="Use reference qualifier" max_length="40" name="u_use_reference_qualifier" type="string"/>
+        <element attributes="import_attribute_name=Widget,edge_encryption_enabled=true" label="Widget" max_length="40" name="u_widget" type="string"/>
+        <element attributes="import_attribute_name=Write roles,edge_encryption_enabled=true" label="Write roles" max_length="40" name="u_write_roles" type="string"/>
+        <element attributes="import_attribute_name=XML view,edge_encryption_enabled=true" label="XML view" max_length="40" name="u_xml_view" type="string"/>
+    </element>
+</database>

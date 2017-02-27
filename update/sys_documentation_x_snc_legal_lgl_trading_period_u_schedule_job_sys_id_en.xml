@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_schedule_job_sys_id" label="Schedule Job Sys Id" language="en" table="x_snc_legal_lgl_trading_period">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_schedule_job_sys_id</element>
+            <help/>
+            <hint/>
+            <label>Schedule Job Sys Id</label>
+            <language>en</language>
+            <name>x_snc_legal_lgl_trading_period</name>
+            <plural>Schedule Job Sys Ids</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:56:56</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>347af7374fc972001aa978e18110c78b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Schedule Job Sys Id</sys_name>
+            <sys_package display_value="Legal" source="x_snc_legal">00d5faee0f0d760013d03f5ce1050e2b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal">00d5faee0f0d760013d03f5ce1050e2b</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_legal_lgl_trading_period_u_schedule_job_sys_id_en</sys_update_name>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:56:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

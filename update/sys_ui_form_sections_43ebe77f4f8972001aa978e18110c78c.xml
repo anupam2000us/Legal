@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="43ebe77f4f8972001aa978e18110c78c" sys_domain="global" table="x_snc_legal_legal_stock_pre_approval_request" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 07:53:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cbebe77f4f8972001aa978e18110c78c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_legal_legal_stock_pre_approval_request" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">43ebe77f4f8972001aa978e18110c78c</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 07:53:27</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 07:53:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>03ebe77f4f8972001aa978e18110c78e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_legal_legal_stock_pre_approval_request" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">43ebe77f4f8972001aa978e18110c78c</sys_ui_form>
+            <sys_ui_section caption="Type of Security to be Traded" display_value="Type of Security to be Traded" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">07ebe77f4f8972001aa978e18110c78d</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 07:53:27</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_legal_legal_stock_pre_approval_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 07:53:27</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>43ebe77f4f8972001aa978e18110c78c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>x_snc_legal_legal_stock_pre_approval_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Legal" source="x_snc_legal">00d5faee0f0d760013d03f5ce1050e2b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal">00d5faee0f0d760013d03f5ce1050e2b</sys_scope>
+            <sys_update_name>sys_ui_form_sections_43ebe77f4f8972001aa978e18110c78c</sys_update_name>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 07:53:27</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

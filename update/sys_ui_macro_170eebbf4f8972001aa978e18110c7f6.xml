@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Defines the contents of the flow_formatter formatter that uses the information in the sys_flow_formatter table to build a process flow diagram on a form.</description>
+        <media_type/>
+        <name>process_flow</name>
+        <scoped_name>x_snc_legal_process_flow</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>upasana</sys_created_by>
+        <sys_created_on>2017-02-27 08:03:18</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>170eebbf4f8972001aa978e18110c7f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>process_flow</sys_name>
+        <sys_package display_value="Legal" source="x_snc_legal">00d5faee0f0d760013d03f5ce1050e2b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal">00d5faee0f0d760013d03f5ce1050e2b</sys_scope>
+        <sys_update_name>sys_ui_macro_170eebbf4f8972001aa978e18110c7f6</sys_update_name>
+        <sys_updated_by>upasana</sys_updated_by>
+        <sys_updated_on>2017-02-27 08:03:18</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+  <link rel="stylesheet" type="text/css" href="styles/process_flow_formatter.cssx"></link>
+  <tr>
+    <td colspan="2" width="100%" nowrap="true">
+      <div>
+	<table width="100%" cellpadding="0" cellspacing="0" class="process_flow_formatter">
+	  <tr>
+	    <g2:flow_formatter var="jvar_flows" table="$[${ref_parent}.getRecordClassName()]" current="$[${ref_parent}]" />
+	    <j2:forEach items="$[jvar_flows]" var="jvar_flow">
+	      <td class="process_flow $[jvar_flow.getParameter('state')]" title="$[jvar_flow.getLabel()]">
+		$[jvar_flow.getLabel()]
+	      </td>
+	      <td width="16" height="100%">
+		<img style="height:28px; width:28px; margin:0px; padding:0px;" 
+		     src="chevron_$[jvar_flow.getParameter('state')]_$[jvar_flow.getParameter('next_state')].pngx" />
+	      </td>
+	    </j2:forEach>
+	  </tr>
+	</table>
+      </div>
+    </td>
+  </tr>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

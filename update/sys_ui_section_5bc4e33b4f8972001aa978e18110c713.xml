@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="5bc4e33b4f8972001aa978e18110c713" sys_domain="global" table="x_snc_legal_legal_stock_pre_approval_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_legal_process_flow.xml</element>
+            <position>0</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>b3bf6bff4f8972001aa978e18110c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">0b6c2f7f4f8972001aa978e18110c7e0</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>b7bf6bff4f8972001aa978e18110c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_name</element>
+            <position>2</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>3bbf6bff4f8972001aa978e18110c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_proposed_trade_date</element>
+            <position>3</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>bbbf6bff4f8972001aa978e18110c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_state</element>
+            <position>4</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>3fbf6bff4f8972001aa978e18110c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_request_valid_till</element>
+            <position>5</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>bfbf6bff4f8972001aa978e18110c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>33bf6bff4f8972001aa978e18110c7bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_type_of_trades</element>
+            <position>7</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>b3bf6bff4f8972001aa978e18110c7bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_number_of_shares</element>
+            <position>8</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>37bf6bff4f8972001aa978e18110c7bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 08:10:09</sys_created_on>
+            <sys_id>b7bf6bff4f8972001aa978e18110c7bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_legal_legal_stock_pre_approval_request" sys_domain="global" view="Default view">5bc4e33b4f8972001aa978e18110c713</sys_ui_section>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 08:10:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_legal_legal_stock_pre_approval_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>upasana</sys_created_by>
+            <sys_created_on>2017-02-27 07:22:21</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5bc4e33b4f8972001aa978e18110c713</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_legal_legal_stock_pre_approval_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Legal" source="x_snc_legal">00d5faee0f0d760013d03f5ce1050e2b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal">00d5faee0f0d760013d03f5ce1050e2b</sys_scope>
+            <sys_update_name>sys_ui_section_5bc4e33b4f8972001aa978e18110c713</sys_update_name>
+            <sys_updated_by>upasana</sys_updated_by>
+            <sys_updated_on>2017-02-27 07:22:21</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

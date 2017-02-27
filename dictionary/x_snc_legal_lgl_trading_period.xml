@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Lgl Trading Period" max_length="40" name="x_snc_legal_lgl_trading_period" type="collection">
+        <element label="Alternate Approver" max_length="32" name="u_alternate_approver" reference="sys_user" type="reference"/>
+        <element label="Approver" max_length="32" name="u_approver" reference="sys_user" type="reference"/>
+        <element label="Is Request For Quarter" max_length="40" name="u_is_request_for_quarter" type="boolean"/>
+        <element label="Number" max_length="40" name="u_number" type="string"/>
+        <element label="Quarter" max_length="40" name="u_quarter" type="string"/>
+        <element label="Result Day" max_length="40" name="u_result_day" type="glide_date"/>
+        <element label="Schedule Job Sys Id" max_length="32" name="u_schedule_job_sys_id" reference="sysauto_script" type="reference"/>
+        <element label="Trading End Date" max_length="40" name="u_trading_end_date" type="glide_date"/>
+        <element label="Trading Start Date" max_length="40" name="u_trading_start_date" type="glide_date"/>
+        <element label="Year" max_length="40" name="u_year" type="glide_date"/>
+        <index name="index">
+            <element name="u_schedule_job_sys_id"/>
+        </index>
+        <index name="index2">
+            <element name="u_alternate_approver"/>
+        </index>
+        <index name="index3">
+            <element name="u_approver"/>
+        </index>
+    </element>
+</database>

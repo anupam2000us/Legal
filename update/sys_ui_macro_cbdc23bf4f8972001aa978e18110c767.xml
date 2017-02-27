@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>UI Macro to render the information half on the Stock Pre Approval form</description>
+        <media_type/>
+        <name>stockPreApproval</name>
+        <scoped_name>x_snc_legal_stockPreApproval</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>upasana</sys_created_by>
+        <sys_created_on>2017-02-27 08:00:11</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cbdc23bf4f8972001aa978e18110c767</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>stockPreApproval</sys_name>
+        <sys_package display_value="Legal" source="x_snc_legal">00d5faee0f0d760013d03f5ce1050e2b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal">00d5faee0f0d760013d03f5ce1050e2b</sys_scope>
+        <sys_update_name>sys_ui_macro_cbdc23bf4f8972001aa978e18110c767</sys_update_name>
+        <sys_updated_by>upasana</sys_updated_by>
+        <sys_updated_on>2017-02-27 08:41:52</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<html>
+		<head>
+			<style>
+				div {
+    				text-align:justify;
+					}
+			</style>
+		</head>
+	
+		<body>
+			<g:evaluate var="jvar_userName" expression="gs.getUserDisplayName()"/>
+			<div>
+			<h3>Examples of Material Non-Public Information</h3>
+			<p>While it is not possible to identify all information that would be deemed "material non-public information," the following types of information ordinarily would be included in the definition, if not yet publicly released by the Company:
+			</p>
+			<ul>
+				<li>Quarterly and year-end earnings, and significant changes or forecasted changes in financial performance or liquidity;</li>
+				<li>Potential material mergers and acquisitions or material sales of Company assets or subsidiaries;</li>
+				<li>Significant developments regarding customers or suppliers, such as the acquisition or loss of a significant contract or major customer;</li>
+				<li>Stock splits, public or private securities, debt offerings, or changes in Company dividend policies or amounts or other events regarding the Company's securities;</li>
+				<li>Significant changes in senior management;</li>
+				<li>Entry into a new, or cancellation of a major strategic relationship;</li>
+				<li>The introduction of key new service offerings or significant changes in the key functions or key operational metrics of our subscription service; and</li>
+				<li>Initiation of a significant lawsuit</li>
+			</ul>
+			</div>
+			<div></div>
+			
+            <div>
+			<h3>Certification</h3>
+            
+				<p>I, <strong><span id="requestor"></span> </strong>, hereby certify that:</p>
+            
+            <ol>
+            	<li>I am not in possession of any "material non-public information" concerning ServiceNow, Inc. ("Company"), as defined in the Company's Policy Prohibiting Insider Trading.</li>
+                <li>Any trades placed in reliance on the approval of the Insider Trading Compliance Officer must be executed within five business days of the date of approval; provided, however, that if I have outstanding orders for a trade and become aware of material non-public information concerning the Company, I will notify the Insider Trading Compliance Officer and cancel the outstanding orders; provided further that I acknowledge and agree that the Insider Trading Compliance Officer can revoke a prior approval at any time the Insider Trading Compliance Officer becomes aware of material non-public information concerning the Company, and that upon notice thereof I will not trade in reliance on that prior approval and I will cancel any outstanding orders placed under that prior approval.</li>
+                <li>To the best of my knowledge, the proposed trade(s) listed above do not violate the trading restrictions of Section 16 of the Securities Exchange Act of 1934, as amended or Rule 144 under the Securities Act of 1933, as amended.</li>
+            </ol>
+            
+            <p>I understand that, If I trade while processing such information or in violation of such trading restrictions, I may be subject to severe civil and/or criminal penalties, and may be subject to discipline by the Company up to and including termination for cause.</p>
+			</div>
+			
+		</body>
+	</html>
+	
+	<script>
+		window.onload = function() {
+		var name = document.getElementById('x_snc_legal_legal_stock_pre_approval_request.u_name_label').value;
+		document.getElementById("requestor").innerHTML = ' '+name+' ';
+		}
+	</script>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

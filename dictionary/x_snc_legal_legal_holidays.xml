@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Legal Holidays" max_length="40" name="x_snc_legal_legal_holidays" type="collection">
+        <element label="Holiday Description" max_length="40" name="u_holiday_description" type="string"/>
+        <element label="Trading Holidays" max_length="40" name="u_trading_holidays" type="glide_date"/>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_column_name" label="Column name" language="en" table="x_snc_legal_stock_request_approval">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_column_name</element>
+            <help/>
+            <hint/>
+            <label>Column name</label>
+            <language>en</language>
+            <name>x_snc_legal_stock_request_approval</name>
+            <plural>Column names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-24 09:26:41</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>13746c0b4f4132001aa978e18110c7b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Column name</sys_name>
+            <sys_package display_value="Legal" source="x_snc_legal">00d5faee0f0d760013d03f5ce1050e2b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal">00d5faee0f0d760013d03f5ce1050e2b</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_legal_stock_request_approval_u_column_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-24 09:26:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

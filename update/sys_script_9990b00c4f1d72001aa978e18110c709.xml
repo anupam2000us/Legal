@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_legal_legal_stock_pre_approval_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>auto_cancel_request_beyond_trading_end</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[/* Send email notification for cancelling of request and make request state expire*/
+// gs.log('BR Legal rule 200');
+/* Get request which are in Pending Approval State*/
+var gr = new GlideRecord('x_snc_legal_legal_stock_pre_approval_request');
+gr.addQuery('u_state', 2);
+// gs.log('BR Legal rule 0');
+gr.query();
+// gs.log('BR Legal rule 1 count is '+gr.getRowCount());
+while(gr.next()) {
+	/*Get proposed date for a request*/
+	var proposed_date =  new GlideDateTime(gr.u_proposed_trade_date);
+// 	gs.log('BR Legal rule 1'+proposed_date);
+	/*Calculate quarter for a request from a proposed trade date*/
+	var year = proposed_date.getYearUTC();
+	var month = proposed_date.getMonthUTC();
+	
+// 	gs.log('BR Legal rule 2');
+	var quarter;
+	
+	if(month >=1 && month<=3){
+		quarter = 'Q1';
+	}else if(month >=4 && month<=6){
+		quarter = 'Q2';
+	}else if(month >=7 && month<=9){
+		quarter = 'Q3';
+	}else if(month >=10 && month<=12){
+		quarter = 'Q4';
+	}
+// 	gs.log('BR Legal rule 3',quarter);
+	/*Get trading end for calculated quarter*/
+	var gr_trading_period = new GlideRecord('u_lgl_trading_period');
+	gr_trading_period.addQuery('u_year',year);
+	gr_trading_period.addQuery('u_quarter',quarter);
+	gr_trading_period.query();
+	
+	var trading_end_date;
+	if(gr_trading_period.next()){
+// 		gs.log('BR Legal rule 4');
+		trading_end_date = gr_trading_period.u_trading_end_date;
+		var today = new GlideDate();
+		var diff = gs.dateDiff(today, trading_end_date, true);
+		/*If today is greater than trading end date of the request send notification to user and mark request as Expire*/
+		if(diff < 0){
+			/*Set state to expired*/
+			gr.u_state = '5';
+			gr.update();
+			
+			/*cancel all the workflows, where current is a task record with a workflow context*/
+			var workflow = new Workflow();
+			workflow.cancel(gr);
+			
+			/*Send request cancel email notification to user*/
+			gs.eventQueueScheduled('notify.legal.user.cancelled',gr,gs.getUserID(), gs.getUserName());
+			
+		}
+	}
+}
+
+
+
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Pradip.Kumbhar</sys_created_by>
+        <sys_created_on>2016-01-12 11:22:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9990b00c4f1d72001aa978e18110c709</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>auto_cancel_request_beyond_trading_end</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal" source="x_snc_legal">00d5faee0f0d760013d03f5ce1050e2b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal">00d5faee0f0d760013d03f5ce1050e2b</sys_scope>
+        <sys_update_name>sys_script_9990b00c4f1d72001aa978e18110c709</sys_update_name>
+        <sys_updated_by>upasana</sys_updated_by>
+        <sys_updated_on>2017-02-27 12:53:27</sys_updated_on>
+        <template/>
+        <when>action</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9990b00c4f1d72001aa978e18110c709"/>
+</record_update>
